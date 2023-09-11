@@ -1,9 +1,9 @@
 #include <array>
 #include <string>
 #include <SFML/Graphics.hpp>
-#include "Global.hpp"
-#include "Pacman.hpp"
-#include "Sketch.hpp"
+#include "header-files/Global.hpp"
+#include "header-files/Pacman.hpp"
+#include "header-files/Sketch.hpp"
 
 std::array<std::array<Cell, HEIGHT>, WIDTH> convert_sketch(const std::array<std::string, HEIGHT>& i_map_sketch, std::array<Position, 4>& i_ghost_positions, Pacman& i_pacman)
 {

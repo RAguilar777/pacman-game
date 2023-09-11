@@ -1,6 +1,6 @@
 #include <chrono>
 #include <SFML/Graphics.hpp>
-#include "Global.hpp"
+#include "header-files/Global.hpp"
 
 int main() {
 	unsigned lag = 0;

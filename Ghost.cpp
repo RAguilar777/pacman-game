@@ -1,10 +1,10 @@
 #include <array>
 #include <cmath>
 #include <SFML/Graphics.hpp>
-#include "Global.hpp"
-#include "Pacman.hpp"
-#include "Ghost.hpp"
-#include "Map.hpp"
+#include "header-files/Global.hpp"
+#include "header-files/Pacman.hpp"
+#include "header-files/Ghost.hpp"
+#include "header-files/Map.hpp"
 
 Ghost::Ghost(unsigned char i_id):
 	id(i_id)
@@ -71,7 +71,7 @@ void Ghost::draw(bool i_flash, sf::RenderWindow& i_window)
 	sf::Sprite face;
 
 	sf::Texture texture;
-	texture.loadFromFile("Resources/Images/Ghost" + std::to_string(CELL_SIZE) + ".png");
+	texture.loadFromFile("resources/Ghost" + std::to_string(CELL_SIZE) + ".png");
 
 	body.setTexture(texture);
 	body.setPosition(position.x, position.y);

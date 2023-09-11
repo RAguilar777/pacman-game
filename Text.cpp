@@ -1,7 +1,7 @@
 #include <cmath>
 #include <SFML/Graphics.hpp>
-#include "Text.hpp"
-#include "Global.hpp"
+#include "header-files/Text.hpp"
+#include "header-files/Global.hpp"
 
 
 // Creates the in-game text
@@ -15,7 +15,7 @@ void draw_text(bool i_center, unsigned short i_x, unsigned short i_y, const std:
 	sf::Sprite character_sprite;
 
 	sf::Texture font_texture;
-	font_texture.loadFromFile("Resources/Images/Font.png");
+	font_texture.loadFromFile("resources/Font.png");
 
 	//There are 96 characters in the font texture.
 	character_width = font_texture.getSize().x / 96;

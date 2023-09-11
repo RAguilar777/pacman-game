@@ -1,9 +1,9 @@
 #include <array>
 #include <cmath>
 #include <SFML/Graphics.hpp>
-#include "Global.hpp"
-#include "Pacman.hpp"
-#include "Map.hpp"
+#include "header-files/Global.hpp"
+#include "header-files/Pacman.hpp"
+#include "header-files/Map.hpp"
 
 
 Pacman::Pacman() :
@@ -51,7 +51,7 @@ void Pacman::draw(bool i_victory, sf::RenderWindow& i_window)
 		{
 			animation_timer++;
 
-			texture.loadFromFile("Resources/Images/PacmanDeath" + std::to_string(CELL_SIZE) + ".png");
+			texture.loadFromFile("resources/PacmanDeath" + std::to_string(CELL_SIZE) + ".png");
 
 			sprite.setTexture(texture);
 			sprite.setTextureRect(sf::IntRect(CELL_SIZE * frame, 0, CELL_SIZE, CELL_SIZE));
@@ -66,7 +66,7 @@ void Pacman::draw(bool i_victory, sf::RenderWindow& i_window)
 	}
 	else
 	{
-		texture.loadFromFile("Resources/Images/Pacman" + std::to_string(CELL_SIZE) + ".png");
+		texture.loadFromFile("resources/Pacman" + std::to_string(CELL_SIZE) + ".png");
 
 		sprite.setTexture(texture);
 		sprite.setTextureRect(sf::IntRect(CELL_SIZE * frame, CELL_SIZE * direction, CELL_SIZE, CELL_SIZE));

@@ -1,7 +1,7 @@
 #include <array>
 #include <SFML/Graphics.hpp>
 #include <cmath>
-#include "Global.hpp"
+#include "header-files/Global.hpp"
 
 
 // Creates the Map
@@ -10,7 +10,7 @@ void draw_map(const std::array<std::array<Cell, HEIGHT>, WIDTH>& i_map, sf::Rend
 	sf::Sprite sprite;
 
 	sf::Texture texture;
-	texture.loadFromFile("Resources/Images/Map" + std::to_string(CELL_SIZE) + ".png");
+	texture.loadFromFile("resources/Map" + std::to_string(CELL_SIZE) + ".png");
 
 	sprite.setTexture(texture);
 
